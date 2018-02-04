@@ -3,9 +3,8 @@ namespace SocialSpy\Commands;
 use pocketmine\command\CommandSender;
 use pocketmine\utils\TextFormat as Text;
 use pocketmine\Player;
-use SocialSpy\Main;
-use SocialSpy\BaseCommand;
-class CommandSpy extends BaseCommand {
+use SocialSpy\Main;;
+class CommandSpy {
 	public function __construct(Main $plugin){
         parent::__construct($plugin, "commandspy", "Spy on others commands!", "/commandspy", ['cmdspy']);
         $this->setPermission("socialspy.commandspy");
